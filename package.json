@@ -1,15 +1,17 @@
 {
-  "name": "@hackcode/env-example-generator",
-  "version": "1.0.1",
+  "name": "@turnkeyid/env-example-generator",
+  "version": "1.0.0",
   "description": "simple cli script to extract all environment variables being used in code",
   "main": "dist/app.js",
   "scripts": {
     "build": "tsc",
-    "start": "node dist/app.js"
+    "start": "node dist/app.js",
+    "publish:local": "npm run build && npm link --force",
+    "publish:online": "npm run clean:package && npm run build && npm publish"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/hackcode-packages/env-example-generator"
+    "url": "https://github.com/turnkey-devs/env-example-generator"
   },
   "keywords": [
     "env",
@@ -18,7 +20,7 @@
     "hackcode"
   ],
   "bin": {
-    "generate-env": "dist/app.js"
+    "create-env-example": "dist/app.js"
   },
   "author": "YashKumarVerma <yk.verma2000@gmail.com>",
   "license": "MIT",

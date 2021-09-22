@@ -1,8 +1,5 @@
-# env example generator
-
-<p align="center">
-<img src="https://user-images.githubusercontent.com/14032427/94772802-0e242080-03d8-11eb-9e7e-f982372886bc.png" width="400">
-</p>
+# 🔧 env.example generator
+This is forked project from https://github.com/hackcode-packages/env-example-generator
 
 ---
 
@@ -16,10 +13,10 @@ This is a simple npm package that will read through the entire codebase (don't w
 
 ```bash
 # install the package using
-sudo npm i -g @hackcode/env-example-generator
+sudo npm i -g @turnkeyid/env-example-generator
 
 # run the cli from the project root
-generate-env
+create-env-example
 
 # An .env.example file would be created
 ```

@@ -41,5 +41,5 @@ export const extractKeysFrom = (keys: Array<string>) => {
 }
 
 export const writeDataToEnv = (keys: Array<string>) => {
-  keys.forEach((key) => fs.appendFileSync('.env.example', `${key}=foo\n`))
+  keys.forEach((key) => fs.appendFileSync('.env.example', `${key}=\n`))
 }

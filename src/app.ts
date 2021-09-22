@@ -4,7 +4,7 @@ import fs from 'fs'
 import recursive from 'recursive-readdir'
 
 /** include auxillary functions */
-import { Filter, extractWordsFrom, extractKeysFrom, writeDataToEnv, stripComments } from './aux'
+import { Filter, extractWordsFrom, extractKeysFrom, writeDataToEnv, stripComments } from './helpers'
 
 /** main function runner */
 const worker = async () => {
